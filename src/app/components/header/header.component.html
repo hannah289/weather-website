@@ -1,1 +1,11 @@
-<p>header works!</p>
+<header>
+   <img src="../../../assets/weather-forecast-icon-seasons-clouds-label-cloudy-weather-forecast-white-background-seasons-clouds-logo-weather-forecast-icon-128447237.jpg" alt="">
+   <div class="toggle_wrapper">
+      <mat-button-toggle-group [value]="selectedNav" (change)="onValChange($event)">
+         <mat-button-toggle value="current">Current Weather</mat-button-toggle>
+         <mat-button-toggle value="forecast">Weather Forecast</mat-button-toggle>
+         <mat-button-toggle value="hist">Historical weather data</mat-button-toggle>
+         <mat-button-toggle value="adv">Heatmaps and other advanced stuff</mat-button-toggle>
+       </mat-button-toggle-group>
+   </div>
+</header>

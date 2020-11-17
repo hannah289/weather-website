@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  public selectedNav = 'current'
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public onValChange(event: any) {
+    this.selectedNav = event.value;
   }
 
 }
